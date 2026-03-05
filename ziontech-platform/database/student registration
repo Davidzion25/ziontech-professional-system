@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZionTech Student Registration</title>
+</head>
+
+<body>
+
+<h2>Student Registration</h2>
+
+<form id="studentForm">
+
+<input type="text" id="name" placeholder="Student Name" required>
+<br><br>
+
+<input type="text" id="class" placeholder="Class" required>
+<br><br>
+
+<input type="email" id="email" placeholder="Email" required>
+<br><br>
+
+<input type="password" id="password" placeholder="Password" required>
+<br><br>
+
+<button type="submit">Register</button>
+
+</form>
+
+<p id="message"></p>
+
+<script>
+
+document.getElementById("studentForm").addEventListener("submit", function(e){
+
+e.preventDefault()
+
+let student = {
+name: document.getElementById("name").value,
+class: document.getElementById("class").value,
+email: document.getElementById("email").value
+}
+
+localStorage.setItem("student", JSON.stringify(student))
+
+document.getElementById("message").innerHTML = "Registration Successful"
+
+})
+
+</script>
+
+</body>
+</html>
