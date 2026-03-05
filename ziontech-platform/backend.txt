@@ -1,0 +1,9 @@
+app.post("/api/register",(req,res)=>{
+
+let student = req.body
+
+students.push(student)
+
+res.json({message:"saved"})
+
+})

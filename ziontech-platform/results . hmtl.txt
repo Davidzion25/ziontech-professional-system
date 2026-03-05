@@ -1,0 +1,24 @@
+<h2>Student Result Checker</h2>
+
+<input type="text" placeholder="Enter Student ID">
+
+<button onclick="checkResult()">Check Result</button>
+
+<div id="result"></div>
+
+<script>
+
+function checkResult(){
+
+document.getElementById("result").innerHTML=
+
+`
+Mathematics : 75 <br>
+English : 80 <br>
+Physics : 70 <br>
+Chemistry : 72
+`;
+
+}
+
+</script>

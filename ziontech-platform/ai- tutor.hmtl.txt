@@ -1,0 +1,31 @@
+<h2>ZionTech AI Lesson Generator</h2>
+
+<input id="topic" placeholder="Enter lesson topic">
+
+<button onclick="generateLesson()">Generate Lesson</button>
+
+<div id="lesson"></div>
+
+<script>
+
+function generateLesson(){
+
+let topic = document.getElementById("topic").value
+
+document.getElementById("lesson").innerHTML =
+`
+<h3>${topic}</h3>
+
+Definition:
+${topic} is an important concept in science.
+
+Explanation:
+This topic explains how scientific principles work in real life.
+
+Example:
+Students should perform practical experiments to understand it.
+`
+
+}
+
+</script>

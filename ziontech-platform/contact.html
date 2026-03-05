@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact ZionTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/ziontech-logo.png" class="logo">
+    <h1>ZionTech</h1>
+    <p>Knowledge is Power</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="library.html">E-Library</a>
+    <a href="ai-tutor.html">AI Tutor</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="simulation.html">Physics Lab</a>
+    <a href="login/student-login.html">Student Portal</a>
+    <a href="login/teacher-login.html">Teacher Portal</a>
+</nav>
+
+<section>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need support, you can reach ZionTech using the form below or through our contact details.</p>
+
+    <form id="contact-form">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" placeholder="ADEYEMO OLANREWAJU DAVID"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" placeholder="olanrewajuadeyemo25@gmail.com"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="5" placeholder="Write your message here"></textarea><br><br>
+
+        <button type="button" onclick="submitContact()">Send Message</button>
+    </form>
+
+    <h3 id="contact-response"></h3>
+</section>
+
+<script>
+function submitContact() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if(name && email && message){
+        document.getElementById("contact-response").innerHTML = 
+            "Thank you, " + name + ". Your message has been sent successfully!";
+        // Here you can integrate backend/email service
+    } else {
+        document.getElementById("contact-response").innerHTML = 
+            "Please fill in all fields before submitting.";
+    }
+}
+</script>
+
+</body>
+</html>

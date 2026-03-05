@@ -1,0 +1,11 @@
+<h2>Ohm's Law Simulation</h2>
+
+Voltage
+<input type="range" id="voltage" min="1" max="20">
+
+Resistance
+<input type="range" id="resistance" min="1" max="10">
+
+<h3 id="current"></h3>
+
+<script src="js/simulation.js"></script>

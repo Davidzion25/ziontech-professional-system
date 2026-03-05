@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student ID Generator - ZionTech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* ID card style */
+        .id-card {
+            border: 2px solid #002147;
+            width: 300px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            background: #f0f4f8;
+            font-family: Arial, sans-serif;
+        }
+        .id-card img {
+            width: 80px;
+        }
+        .id-card h3 {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="../images/ziontech-logo.png" class="logo">
+    <h1>ZionTech ID Card Generator</h1>
+    <p>Knowledge is Power</p>
+</header>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="../library.html">E-Library</a>
+    <a href="../dashboards/admin-dashboard.html">Admin Dashboard</a>
+</nav>
+
+<section>
+    <h2>Generate Student ID Card</h2>
+
+    <label for="student-name">Student Name:</label><br>
+    <input type="text" id="student-name" placeholder="Enter student name"><br><br>
+
+    <label for="student-class">Class:</label><br>
+    <input type="text" id="student-class" placeholder="Enter class"><br><br>
+
+    <button onclick="generateID()">Generate ID</button>
+
+    <div id="id-card-container"></div>
+</section>
+
+<script>
+function generateID() {
+    const name = document.getElementById("student-name").value;
+    const studentClass = document.getElementById("student-class").value;
+
+    if(name && studentClass){
+        // Generate random unique ID
+        const uniqueID = "ZT" + Math.floor(1000 + Math.random() * 9000);
+
+        // Create ID card HTML
+        const cardHTML = `
+            <div class="id-card">
+                <img src="../images/ziontech-logo.png" alt="ZionTech Logo">
+                <h3>${name}</h3>
+                <p>Class: ${studentClass}</p>
+                <p>ID: <strong>${uniqueID}</strong></p>
+                <p>ZionTech</p>
+            </div>
+        `;
+
+        document.getElementById("id-card-container").innerHTML = cardHTML;
+    } else {
+        alert("Please fill in all fields.");
+    }
+}
+</script>
+
+</body>
+</html>

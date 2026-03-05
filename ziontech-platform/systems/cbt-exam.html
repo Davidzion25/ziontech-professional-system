@@ -1,0 +1,12 @@
+<h2>CBT Exam</h2>
+<p>SI Unit of resistance?</p>
+<input type="radio" name="q1" value="A"> Ohm
+<input type="radio" name="q1" value="B"> Volt
+<button onclick="submitCBT()">Submit</button>
+<h3 id="score"></h3>
+<script>
+function submitCBT(){
+    let answer=document.querySelector('input[name="q1"]:checked').value
+    document.getElementById("score").innerHTML=(answer=="A")?"Correct":"Incorrect"
+}
+</script>

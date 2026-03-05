@@ -1,0 +1,60 @@
+<h2>ZionTech Report Card</h2>
+
+Student Name
+<input id="name"><br>
+
+Math
+<input id="math"><br>
+
+English
+<input id="eng"><br>
+
+Physics
+<input id="phy"><br>
+
+Electrical Installation
+<input id="ei"><br>
+
+Solar Installation
+<input id="si"><br>
+Chemistry
+<input id="che"><br>
+
+Economic
+<input id="eco"><br>
+
+Biology
+<input id="bio"><br>
+
+Digital Technology
+<input id="dt"><br> 
+
+<button onclick="generate()">Generate Report</button>
+
+<div id="report"></div>
+
+<script>
+
+function generate(){
+
+let name = document.getElementById("name").value
+let m = Number(document.getElementById("math").value)
+let e = Number(document.getElementById("eng").value)
+let p = Number(document.getElementById("phy").value)
+
+let avg = (m+e+p)/3
+
+document.getElementById("report").innerHTML=
+
+`
+<h3>${name}</h3>
+Math: ${m}<br>
+English: ${e}<br>
+Physics: ${p}<br>
+
+Average: ${avg}
+`
+
+}
+
+</script>

@@ -1,0 +1,12 @@
+<h2>Science Quiz</h2>
+
+<p>Unit of electric current?</p>
+
+<input type="radio" name="q1" value="A"> Ampere  
+<input type="radio" name="q1" value="B"> Volt  
+
+<button onclick="checkQuiz()">Submit</button>
+
+<h3 id="result"></h3>
+
+<script src="js/quiz.js"></script>

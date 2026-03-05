@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About ZionTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/ziontech-logo.png" class="logo">
+    <h1>ZionTech</h1>
+    <p>Knowledge is Power</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="library.html">E-Library</a>
+    <a href="ai-tutor.html">AI Tutor</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="simulation.html">Physics Lab</a>
+    <a href="login/student-login.html">Student Portal</a>
+    <a href="login/teacher-login.html">Teacher Portal</a>
+</nav>
+
+<section>
+    <h2>About ZionTech</h2>
+    <p>
+        ZionTech is a modern educational platform for secondary and technical students.
+        Our mission is to provide high-quality digital learning resources and tools
+        to support both students and teachers.
+    </p>
+    <p>
+        Features of ZionTech include:
+        <ul>
+            <li>AI Teacher Assistant for lesson guidance</li>
+            <li>Interactive Physics Simulation Lab</li>
+            <li>Downloadable Lesson Notes</li>
+            <li>Online Quizzes & CBT Exam Simulator</li>
+            <li>Student Result Portal and Report Cards</li>
+            <li>Teacher and Admin Dashboards</li>
+        </ul>
+    </p>
+    <p>
+        ZionTech is dedicated to making learning accessible, engaging, and interactive
+        for every student, empowering them to achieve academic excellence.
+    </p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login - ZionTech</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+    <img src="../images/ziontech-logo.png" class="logo">
+    <h1>ZionTech Admin Portal</h1>
+    <p>Knowledge is Power</p>
+</header>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="../library.html">E-Library</a>
+    <a href="../ai-tutor.html">AI Tutor</a>
+    <a href="../quiz.html">Quiz</a>
+    <a href="../simulation.html">Physics Lab</a>
+    <a href="student-login.html">Student Portal</a>
+    <a href="teacher-login.html">Teacher Portal</a>
+</nav>
+
+<section>
+    <h2>Admin Login</h2>
+
+    <form id="admin-login-form">
+        <label for="admin-id">Admin ID:</label><br>
+        <input type="text" id="admin-id" placeholder="Enter Admin ID"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="admin-password" placeholder="Enter Password"><br><br>
+
+        <button type="button" onclick="adminLogin()">Login</button>
+    </form>
+
+    <h3 id="login-response"></h3>
+</section>
+
+<script>
+// Simple Admin Login
+function adminLogin() {
+    const adminId = document.getElementById("admin-id").value;
+    const password = document.getElementById("admin-password").value;
+
+    // Hardcoded example (replace with database/auth later)
+    if(adminId === "ADMIN01" && password === "ziontech2026") {
+        document.getElementById("login-response").innerHTML = 
+            "Login successful! Redirecting to Admin Dashboard...";
+        // Redirect to admin dashboard
+        setTimeout(() => {
+            window.location.href = "../dashboards/admin-dashboard.html";
+        }, 1500);
+    } else {
+        document.getElementById("login-response").innerHTML = 
+            "Invalid Admin ID or Password. Please try again.";
+    }
+}
+</script>
+
+</body>
+</html>
