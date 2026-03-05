@@ -1,42 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Teacher Dashboard - TechEdu</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<h2>Teacher Dashboard</h2>
 
-<header>
-    <h2>Teacher Dashboard</h2>
-    <button onclick="logout()">Logout</button>
-</header>
+<ul>
 
-<div class="dashboard">
+<li><a href="upload-lesson.html">Upload Lesson Notes</a></li>
 
-    <h3>Upload Lesson Note</h3>
-    <input type="text" id="subject" placeholder="Subject Name">
-    <textarea id="lesson" placeholder="Write lesson note here"></textarea>
-    <button onclick="uploadLesson()">Upload Lesson</button>
+<li><a href="create-quiz.html">Create Quiz</a></li>
 
-    <h3>Upload PDF</h3>
-    <input type="file" id="pdfFile">
-    <button onclick="uploadPDF()">Upload PDF</button>
+<li><a href="student-results.html">View Student Results</a></li>
 
-</div>
-
-</body>
-</html>
-<li>Create Quiz</li>
-
-<li>Upload Results</li>
-
-<li>Mark Attendance</li>
+<li><a href="id-generator.html">Generate Student ID</a></li>
 
 </ul>
-
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js"></script>
-<script src="js/firebase-config.js"></script>
-<script src="js/teacher.js"></script>
